@@ -8,16 +8,24 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myrxjavagetdata.MainActivity;
 import com.example.myrxjavagetdata.R;
 import com.example.myrxjavagetdata.models.Post;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostViewHolder> {
 
     Context context;
     List<Post> postList;
+
+    public PostAdapter(MainActivity mainActivity) {
+    }
+
+    public PostAdapter(Context context, List<Post> postList) {
+        this.context = context;
+        this.postList = postList;
+    }
 
     @NonNull
     @Override

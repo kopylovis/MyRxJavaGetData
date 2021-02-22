@@ -1,8 +1,10 @@
 package com.example.myrxjavagetdata.retrofit;
 
-import android.database.Observable;
+
 import com.example.myrxjavagetdata.models.Post;
 import java.util.List;
+
+import io.reactivex.Observable;
 import retrofit2.http.GET;
 
 public interface PostApi {
